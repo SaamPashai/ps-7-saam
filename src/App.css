@@ -4,29 +4,91 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a{
+  padding-left: 20px;
+}
+
+#all{
+  padding-top: 20px;
+  width:100%;
+}
+
+main{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1{
+  text-align: center;
+}
+.animal{
+  height: 200px;
+  width: 200px;
+}
+
+
+.luigi{
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 200px;
+  width: 150px;
+}
+
+.cite{
+  padding-bottom: 20px;
+}
+
+/* Everything from here down is taken from https://codepen.io/JTParrett/pen/hktzu. I included it because it looks cool.*/
+
+/* from codepen */
+.cube { 
+ -webkit-transform-style: preserve-3d;
+ -webkit-animation: spin 3s infinite ease-out;
+ position: relative;
+ width: 100px;
+ height: 100px;
+ top: 50%;
+ left: 50%;
+ margin-left: -50px;
+ margin-top: -50px;
+}
+
+/* from codepen */
+.cube div {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  position: absolute;
+}
+
+/* from codepen */
+@-webkit-keyframes spin {
+ 0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+ 100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
 }
